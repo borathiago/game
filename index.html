@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icatu Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/icatu-game.css">
+    <link rel="stylesheet" href="css/icatu-animations.css">
+    <style>
+        html {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <section id="main-area" class="tela mx-auto">
+        <div id="intro-area" class="tela bg-[url(../img/bg.jpg)] bg-cover bg-center transition-all duration-500">
+            <div class="w-full h-full flex flex-col justify-center items-center">
+                <div class="w-full py-20 h-2/5 flex flex-col justify-center items-center">
+                    <img class="mx-auto mix-w-[870px] max-w-[870px]" src="/img/logo.png" alt="Icatu Game">
+                </div>
+                <div id="replace-content-intro" class="transition-all duration-500 h-3/5">
+                    <div id="loading" class="min-w-[900px] max-w-[900px] mx-auto flex flex-col justify-center items-center pb-16"></div>
+                    <div class="min-w-[900px] max-w-[900px] mx-auto">
+                        <h1 id="title-intro" class="text-[7rem] text-white font-black italic leading-[8rem] tracking-normal">
+                            Jogue e colete os <br>
+                            benefícios Icatu <br>
+                            para Assessores <br>
+                            e Dedicados XP.
+                        </h1>
+                        <p id="subtitle-intro" class="text-[5.5rem] text-white font-extralight italic leading-[8rem]"></p>
+                    </div>
+                    <div id="icons" class="min-w-[900px] max-w-[900px] mx-auto flex flex-row justify-center items-center gap-5 pt-20 pb-7">
+                        <div id="icon-intro-1" class="flex-1"></div>
+                        <div id="icon-intro-2" class="flex-1"></div>
+                        <div id="icon-intro-3" class="flex-1"></div>
+                    </div>
+                    <div id="jogar" class="w-full py-24 cursor-pointer">
+                        <img class="pointer-events-none mx-auto" src="/img/jogar.png" alt="Jogar">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="game-area" class="transition-all duration-300 isolate"></div>
+        <div id="game-over" class="transition duration-300"></div>
+        <div id="finnish" class="transition duration-300"></div>
+    </section>
+    <script src="js/steps.js"></script>
+    <script src="js/icatu.js"></script>
+</body>
+</html>
